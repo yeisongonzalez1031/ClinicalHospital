@@ -14,3 +14,4 @@ public class ClinicalHospital {
         System.out.println("Hello World!");
     }
 }
+    
