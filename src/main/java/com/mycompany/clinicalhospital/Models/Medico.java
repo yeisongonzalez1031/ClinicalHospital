@@ -16,15 +16,15 @@ public class Medico extends Persona{
     public Medico() {
     }
 
-    public Medico(String Especialidad, String TarjetProfesional) {
+    public Medico(String Especialidad, String TarjetaProfesional) {
         this.Especialidad = Especialidad;
-        this.TarjetaProfesional = TarjetProfesional;
+        this.TarjetaProfesional = TarjetaProfesional;
     }
 
-    public Medico(String Especialidad, String TarjetProfesional, String Nombre, int Edad, String Cedula) {
+    public Medico(String Especialidad, String TarjetaProfesional, String Nombre, int Edad, String Cedula) {
         super(Nombre, Edad, Cedula);
         this.Especialidad = Especialidad;
-        this.TarjetaProfesional = TarjetProfesional;
+        this.TarjetaProfesional = TarjetaProfesional;
     }
     
     
@@ -36,12 +36,12 @@ public class Medico extends Persona{
         this.Especialidad = Especialidad;
     }
 
-    public String getTarjetProfesional() {
+    public String getTarjetaProfesional() {
         return TarjetaProfesional;
     }
 
-    public void setTarjetProfesional(String TarjetProfesional) {
-        this.TarjetaProfesional = TarjetProfesional;
+    public void setTarjetaProfesional(String TarjetaProfesional) {
+        this.TarjetaProfesional = TarjetaProfesional;
     }
 
     @Override
