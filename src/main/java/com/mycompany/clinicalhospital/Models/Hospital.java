@@ -14,17 +14,22 @@ public class Hospital {
     
     private String Nombre;
     private String Ciudad;
-    private ArrayList<Consulta> consulta;
+    private ArrayList<Consulta> consultas;
 
     public Hospital() {
+        consultas = new ArrayList<>();
     }
 
-    public Hospital(String Nombre, String Ciudad, ArrayList<Consulta> consulta) {
+    public Hospital(String Nombre, String Ciudad,ArrayList<Consulta> consultas) {
         this.Nombre = Nombre;
         this.Ciudad = Ciudad;
-        this.consulta = consulta;
+        this.consultas = new ArrayList<>();
     }
 
+    public void RegistrarConsulta(Consulta c){
+        consultas.add(c);  
+    }
+    
     public String getNombre() {
         return Nombre;
     }
@@ -41,17 +46,11 @@ public class Hospital {
         this.Ciudad = Ciudad;
     }
 
-    public ArrayList<Consulta> getConsulta() {
-        return consulta;
-    }
-
-    public void setConsulta(ArrayList<Consulta> consulta) {
-        this.consulta = consulta;
-    }
-
+    
+    
     @Override
     public String toString() {
-        return "Hospital{" + "Nombre=" + Nombre + ", Ciudad=" + Ciudad + ", consulta=" + consulta + '}';
+        return "Hospital: " + "Nombre: " + Nombre + ", Ciudad: " + Ciudad + ", consultas: " +"\n"+consultas;
     }
     
 }

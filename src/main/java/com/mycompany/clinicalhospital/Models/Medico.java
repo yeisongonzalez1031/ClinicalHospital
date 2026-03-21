@@ -43,10 +43,20 @@ public class Medico extends Persona{
     public void setTarjetaProfesional(String TarjetaProfesional) {
         this.TarjetaProfesional = TarjetaProfesional;
     }
+    
+    public void Atender(Consulta c){
+        
+        System.out.println("Atendiendo consulta:");
+        System.out.println("Fecha: " + c.getFecha());
+        System.out.println("Motivo: " + c.getMotivo());
+        System.out.println("Diagnostico: " + c.getDiagnostico());
+    }
 
     @Override
     public String toString() {
-        return "Medico{" + "Especialidad=" + Especialidad + ", TarjetaProfesional=" + TarjetaProfesional + '}';
+        return "Medico{" + "Especialidad: " + Especialidad + ", TarjetaProfesional: " + TarjetaProfesional + '}';
     }
+    
+    
     
 }
