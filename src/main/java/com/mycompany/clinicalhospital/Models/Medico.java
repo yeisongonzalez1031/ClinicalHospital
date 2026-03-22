@@ -23,8 +23,8 @@ public class Medico extends Persona{
         this.Consultorio = Consultorio;
     }
 
-    public Medico(String Especialidad, String TarjetaProfesional, int Consultorio, String Nombre, int Edad, String Cedula) {
-        super(Nombre, Edad, Cedula);
+    public Medico(String Especialidad, String TarjetaProfesional, int Consultorio, String Nombre, int Edad, String Cedula, String Telefono) {
+        super(Nombre, Edad, Cedula, Telefono);
         this.Especialidad = Especialidad;
         this.TarjetaProfesional = TarjetaProfesional;
         this.Consultorio = Consultorio;

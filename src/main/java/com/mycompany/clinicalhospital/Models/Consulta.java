@@ -13,15 +13,19 @@ public class Consulta {
     private String Fecha;
     private String Motivo;
     private String Diagnostico;
+    private int duracionC;
 
     public Consulta() {
     }
 
-    public Consulta(String Fecha, String Motivo, String Diagnostico) {
+    public Consulta(String Fecha, String Motivo, String Diagnostico, int duracionC) {
         this.Fecha = Fecha;
         this.Motivo = Motivo;
         this.Diagnostico = Diagnostico;
+        this.duracionC = duracionC;
     }
+
+    
 
     public String getFecha() {
         return Fecha;
@@ -47,9 +51,17 @@ public class Consulta {
         this.Diagnostico = Diagnostico;
     }
 
+    public int getDuracionC() {
+        return duracionC;
+    }
+
+    public void setDuracionC(int duracionC) {
+        this.duracionC = duracionC;
+    }
+    
     @Override
     public String toString() {
-        int i=0;
-        return "Consulta "+"{"+ "Fecha=" + Fecha + ", Motivo=" + Motivo + ", Diagnostico=" + Diagnostico + '}'+"\n";
+        
+        return "Consulta "+"{"+ "Fecha=" + Fecha + ", Motivo=" + Motivo + ", Diagnostico=" + Diagnostico + ", Duracion de consulta(minutos): "+ duracionC +'}'+"\n";
     }
 }

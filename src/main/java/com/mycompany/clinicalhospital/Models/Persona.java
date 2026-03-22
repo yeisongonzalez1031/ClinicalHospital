@@ -13,18 +13,18 @@ public class Persona {
     private String Nombre;
     private int Edad;
     private String Cedula;
+    private String Telefono;
     
     
     public Persona() {
     }
-    
-    
-    public Persona(String Nombre, int Edad, String Cedula) {
+
+    public Persona(String Nombre, int Edad, String Cedula, String Telefono) {
         this.Nombre = Nombre;
         this.Edad = Edad;
         this.Cedula = Cedula;
+        this.Telefono = Telefono;
     }
-
     
     public String getNombre() {
         return Nombre;
@@ -50,9 +50,18 @@ public class Persona {
         this.Cedula = Cedula;
     }
 
+    public String getTelefono() {
+        return Telefono;
+    }
+
+    public void setTelefono(String Telefono) {
+        this.Telefono = Telefono;
+    }
+
+    
     @Override
     public String toString() {
-        return "Nombre: " + Nombre + ", Edad: " + Edad + ", Cedula: " + Cedula ;
+        return "Nombre: " + Nombre + ", Edad: " + Edad + ", Cedula: " + Cedula +", Telefono: "+ Telefono;
     }
     
     
