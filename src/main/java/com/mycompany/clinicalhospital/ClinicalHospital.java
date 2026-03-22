@@ -35,18 +35,20 @@ public static void main(String []args){
     M1.setEdad(25);
     M1.setCedula("32058960");
     M1.setEspecialidad("cirujano");
-    M1.setTarjetaProfesional("NaN");
+    M1.setTarjetaProfesional("C 1284324");
+    M1.setConsultorio(2);
     M1.Atender(C1);
-    System.out.println(M1+"Nombre: "+ M1.getNombre());
+    System.out.println(M1);
     
     Medico M2 = new Medico();
     M2.setNombre("house");
     M2.setEdad(53);
     M2.setCedula("28323516");
     M2.setEspecialidad("medicina general");
-    M2.setTarjetaProfesional("clasificado");
+    M2.setTarjetaProfesional("MG 12953");
+    M2.setConsultorio(1);
     M2.Atender(C2);
-    System.out.println(M2+"Nombre: "+ M2.getNombre());
+    System.out.println(M2);
       
     
     

@@ -12,21 +12,23 @@ public class Medico extends Persona{
     
     private String Especialidad;
     private String TarjetaProfesional;
+    private int Consultorio;
     
     public Medico() {
     }
 
-    public Medico(String Especialidad, String TarjetaProfesional) {
+    public Medico(String Especialidad, String TarjetaProfesional, int Consultorio) {
         this.Especialidad = Especialidad;
         this.TarjetaProfesional = TarjetaProfesional;
+        this.Consultorio = Consultorio;
     }
 
-    public Medico(String Especialidad, String TarjetaProfesional, String Nombre, int Edad, String Cedula) {
+    public Medico(String Especialidad, String TarjetaProfesional, int Consultorio, String Nombre, int Edad, String Cedula) {
         super(Nombre, Edad, Cedula);
         this.Especialidad = Especialidad;
         this.TarjetaProfesional = TarjetaProfesional;
+        this.Consultorio = Consultorio;
     }
-    
     
     public String getEspecialidad() {
         return Especialidad;
@@ -43,6 +45,14 @@ public class Medico extends Persona{
     public void setTarjetaProfesional(String TarjetaProfesional) {
         this.TarjetaProfesional = TarjetaProfesional;
     }
+
+    public int getConsultorio() {
+        return Consultorio;
+    }
+
+    public void setConsultorio(int Consultorio) {
+        this.Consultorio = Consultorio;
+    }
     
     public void Atender(Consulta c){
         
@@ -54,7 +64,8 @@ public class Medico extends Persona{
 
     @Override
     public String toString() {
-        return "Medico{" + "Especialidad: " + Especialidad + ", TarjetaProfesional: " + TarjetaProfesional + '}';
+        
+        return "Consultorio: "+ Consultorio +"\n"+"Medico{" + super.toString() +", Especialidad: " + Especialidad + ", TarjetaProfesional: " + TarjetaProfesional + '}';
     }
     
     

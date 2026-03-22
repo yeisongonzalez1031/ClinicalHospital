@@ -50,6 +50,6 @@ public class Consulta {
     @Override
     public String toString() {
         int i=0;
-        return "Consulta "+(i+1)+"{"+ "Fecha=" + Fecha + ", Motivo=" + Motivo + ", Diagnostico=" + Diagnostico + '}'+"\n";
+        return "Consulta "+"{"+ "Fecha=" + Fecha + ", Motivo=" + Motivo + ", Diagnostico=" + Diagnostico + '}'+"\n";
     }
 }
