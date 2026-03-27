@@ -46,11 +46,21 @@ public class Hospital {
         this.Ciudad = Ciudad;
     }
 
-    
+    public void ListarConsultas(){
+        
+        System.out.println("Consultas de la clinica: ");
+        
+        for(Consulta c: consultas){
+        
+            System.out.println(c);
+            
+        }
+        
+    }
     
     @Override
     public String toString() {
-        return "Hospital: " + "Nombre: " + Nombre + ", Ciudad: " + Ciudad + ", consultas: " +"\n"+consultas;
+        return "Hospital: " + "Nombre: " + Nombre + ", Ciudad: " + Ciudad;
     }
     
 }

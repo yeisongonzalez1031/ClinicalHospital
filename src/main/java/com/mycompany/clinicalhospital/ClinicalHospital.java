@@ -28,7 +28,7 @@ public static void main(String []args){
     H.RegistrarConsulta(C2);
     H.RegistrarConsulta(C3);
     System.out.println(H);
-    
+    H.ListarConsultas();
         
     Medico M1 = new Medico();
     M1.setNombre("Edward");
